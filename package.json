@@ -1,0 +1,56 @@
+{
+  "name": "grunt-contrib-jade-php",
+  "description": "Jade Template Engine for PHP, powered by tale-jade.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/clthck/grunt-contrib-jade-php",
+  "author": {
+    "name": "clthck",
+    "email": "joey.corleone92@yahoo.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/clthck/grunt-contrib-jade-php.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clthck/grunt-contrib-jade-php/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/clthck/grunt-contrib-jade-php/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "install": "composer update",
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.1",
+    "grunt-release": "~0.6.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin",
+    "grunt",
+    "jade",
+    "template",
+    "php",
+    "jadephp"
+  ],
+  "dependencies": {
+    "async": "~0.2.9"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "license": "MIT"
+}

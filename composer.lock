@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "0d080bb87c9356bbce9fb585805caaee",
+    "content-hash": "e620eb2c18ae0f2d88b4927acbd78510",
+    "packages": [
+        {
+            "name": "clthck/slimphp",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clthck/slimphp.git",
+                "reference": "b42bae255681dfbf966c814617f3913495abf4b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clthck/slimphp/zipball/b42bae255681dfbf966c814617f3913495abf4b1",
+                "reference": "b42bae255681dfbf966c814617f3913495abf4b1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "clthck\\SlimPHP\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "clthck",
+                    "email": "joey.corleone92@yahoo.com"
+                }
+            ],
+            "description": "Ruby's Slim-like template engine for PHP 5.4+",
+            "time": "2015-12-22 13:48:03"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

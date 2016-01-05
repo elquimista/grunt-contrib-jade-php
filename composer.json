@@ -1,0 +1,29 @@
+{
+  "name": "clthck/grunt-contrib-jade-php",
+  "description": "Jade Template Engine for PHP, powered by tale-jade.",
+  "type": "grunt task",
+  "homepage": "https://github.com/clthck/grunt-contrib-jade-php",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "clthck",
+      "email": "joey.corleone92@yahoo.com"
+    }
+  ],
+  "support": {
+    "url": "https://github.com/clthck/grunt-contrib-jade-php/issues",
+    "source": "https://github.com/clthck/grunt-contrib-jade-php"
+  },
+  "require": {
+    "talesoft/tale-jade": "*"
+  },
+  "bin": ["bin/jadephp"],
+  "keywords": [
+    "gruntplugin",
+    "grunt",
+    "jade",
+    "template",
+    "php",
+    "jadephp"
+  ]
+}
