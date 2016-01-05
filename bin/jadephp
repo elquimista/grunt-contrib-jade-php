@@ -1,0 +1,59 @@
+#!/usr/bin/env php
+<?php
+
+require dirname(__FILE__) . '/../vendor/autoload.php';
+
+use Tale\Jade;
+
+function usage() {
+    global $argv;
+
+    fwrite(STDERR, "Usage: $argv[0] [-p 1|0] <inputFile> [outputFile]\n");
+    exit(1);
+}
+
+function main($args) {
+    array_shift($args);
+
+    $opts = getopt('p:');
+
+    if (isset($opts['p'])) {
+        $pretty = $opts['p'];
+        $args = array_slice($args, 2);
+    } else {
+        $pretty = false;
+    }
+
+    if (count($args) < 1 || count($args) > 2)
+        usage();
+
+    $options = [
+        'pretty' => $pretty,
+    ];
+
+    $renderer = new Jade\Renderer($options);
+
+    $input = @file_get_contents($args[0]);
+    if ($input === false) {
+        fwrite(STDERR, "Unable to open $args[0]\n");
+        exit(1);
+    }
+
+    try {
+        // Parse a template (both string & file containers)
+        $output = $renderer->render($args[0]);
+    } catch (Exception $e) {
+        fwrite(STDERR, $e->getMessage() . "\n");
+        exit(1);
+    }
+
+    if (count($args) == 2) {
+        file_put_contents($args[1], $output);
+    } else {
+        echo $output;
+    }
+}
+
+main($argv);
+
+# vim: ft=php
