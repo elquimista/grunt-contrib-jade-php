@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-jade-php",
   "description": "Jade Template Engine for PHP, powered by tale-jade.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/clthck/grunt-contrib-jade-php",
   "author": {
     "name": "clthck",
