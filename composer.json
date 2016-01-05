@@ -15,7 +15,8 @@
     "source": "https://github.com/clthck/grunt-contrib-jade-php"
   },
   "require": {
-    "talesoft/tale-jade": "*"
+    "talesoft/tale-jade": "*",
+    "erusev/parsedown": "*"
   },
   "bin": ["bin/jadephp"],
   "keywords": [
