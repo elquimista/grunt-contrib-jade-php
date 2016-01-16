@@ -31,10 +31,6 @@ function main($args) {
         'adapterOptions' => [
             'path' => 'tmp/cache/views'
         ],
-        'lexerOptions' => [
-            'indentStyle' => ' ',
-            'indentWidth' => 2
-        ],
         'pretty' => $pretty,
     ];
 
